@@ -7,7 +7,7 @@ function greeter(name) {
   console.log("Hi " + name);
 }
 
- greeter("Ty")
+ // greeter("Ty")
 
 function reverseString(str) {
   //  declare variable using "var keyword"
@@ -39,12 +39,39 @@ results += " "
 }
  var myString = "reverse the words in this string";
 
- console.log(reverseWordsInString(myString));
+ // console.log(reverseWordsInString(myString));
 
 
 function mostCommonCharacter(str) {
+  //create a container to hold the number of occurances for each number in the string
+  // loop over the string for esch chsracter in the string 
+  // check to see if that character exists in the container
+  // if it does exist, add 1 to the amount
+  // if it doesn't exist set that character's amount = to 1
+  var results = {},
+      greatest = 0,
+      greatestLetter = '';
 
+  for(var i = 0; i < str.length-1; i ++) {
+    if(results[str[i]]) {
+      results[str[i]] +=1; // {H: 1, A: 1}
+    }
+    else {
+      results[str[i]] = 1;
+    }
+  }
+  Object.keys(results).map(function(letter) {
+    if (results[letter] > greatest) {
+      greatest = results[letter];
+      greatestLetter = letter;
+    }
+  });
+  return greatestLetter;
 }
+
+var myString = 'HAPPY BIRTHDAY TO YOUUUUUUU';
+console.log(mostCommonCharacter(myString));
+
 
 function firstNonRepeatChar(str) {
 
@@ -55,8 +82,11 @@ function removeDuplicateChar(str) {
 }
 
 function isPalindrome(str){
-
+  return str === str.reverse();
 }
+
+// console.log(isPalindrome('radar') === true)
+// console.log(isPalindrome('12321') === true)
 
 function isPrime(n) {
 
