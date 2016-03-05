@@ -70,7 +70,7 @@ function mostCommonCharacter(str) {
 }
 
 var myString = 'HAPPY BIRTHDAY TO YOUUUUUUU';
-console.log(mostCommonCharacter(myString));
+// console.log(mostCommonCharacter(myString));
 
 
 function firstNonRepeatChar(str) {
@@ -99,3 +99,64 @@ function rand7(){
 function findIndex(values, target) {
 
 }
+
+function fizzBuzz(num) {
+  for(var i = 1; i < (num ); i++){
+    if(i % 15 === 0 ) {
+      console.log('fizzBuzz');
+    }
+    else if(i % 3 === 0) {
+      console.log('Fizz');
+    }
+    else if( i % 5 === 0){
+      console.log('Buzz');
+    }
+    else {
+      console.log( i );
+    }
+  }
+}
+
+// fizzBuzz(10)
+
+
+function buildTriange(num) {
+  var triangle = "";
+
+  for(var i = 1; i < num; i++){
+
+    for(var x = 1; x <= i; x++) {
+      triangle+= "#";
+    }
+    triangle += '\n';
+  }
+  console.log(triangle);
+}
+
+// buildTriange(7)
+
+var Person = function(name, age, color) {
+  this.name = name;
+  this.age = age;
+  this.favColor = color;
+}
+
+Person.prototype.speakName = function() {
+  console.log("My name is " + this.name);
+  return this.name;
+
+};Person.prototype.changeName = function(name) {
+  this.name = name;
+};
+
+var tyler = new Person("Tyler", 13, "blue");
+
+console.log(tyler.speakName());
+console.log(tyler.changeName("Ty"));
+console.log(tyler.speakName());
+
+
+
+
+
+
