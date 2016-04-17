@@ -1,0 +1,12 @@
+.small-1{
+	height: 20px;
+	background-color: red;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+ }
+.active-p1 {
+	background-color: blue;
+}
+.active-p2 {
+	background-color: green;
+}
