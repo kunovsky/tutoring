@@ -1,0 +1,29 @@
+body {
+  padding-top: 3rem;
+}
+
+.columns {
+  background-color: green;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.square {
+   cursor: pointer;
+}
+
+.color1 {
+  background-color: #66C5FF;
+}
+
+.color2 {
+  background-color: #003cba;
+}
+
+.color3 {
+  background-color: #d5ebff;
+}
+
+.color4 {
+  background-color: #636363;
+}
