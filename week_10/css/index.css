@@ -3,13 +3,13 @@ body {
 }
 
 .columns {
-  background-color: green;
   height: 150px;
   border: 1px solid black;
 }
 
 .square {
    cursor: pointer;
+   transition: 0.5s;
 }
 
 .color1 {
